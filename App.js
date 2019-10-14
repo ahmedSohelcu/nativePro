@@ -43,40 +43,43 @@ export class LotsOfStyles extends React.Component {
     return (
       <Fragment>
             <ScrollView>
-               <View style={{width: 360, height: 90, backgroundColor: '#000'}}>
-                   <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>This is a Demo Project & Developed by :</Text>
-                   <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>Ahmed sohel</Text>
-                   <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>24.9.2019</Text>
-                </View>
+                    <View style={{width: 360, height: 90, backgroundColor: '#000'}}>
+                       <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>This is a Demo Project & Developed by :</Text>
+                       <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>Ahmed sohel</Text>
+                       <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>24.9.2019</Text>
+                    </View>
 
-                <MyData name="Ahmed sohel.." email="ahmed@gmail.com"/>
+                    <View style={styles.container}>
+                        <MyData name="Ahmed sohel.." email="ahmed@gmail.com"/>
 
-                 <Button
-                 onPress={() => {
-                   alert('This function is created by Ahmed..!');
-                 }}
-                 color="#841584"
-                 title="Click to get Alert"/>
+                         <Button
+                         onPress={() => {
+                           alert('This function is created by Ahmed..!');
+                         }}
+                         color="#841584"
+                         title="Click to get Alert"/>
 
 
-                  <Text style={[styles.bigBlue,styles.mB10 ]}>PHP Laravel Framework শেখার আগে কি কি বিষয় জানতে হবে? </Text>
+                          <Text style={[styles.bigBlue,styles.mB10 ]}>PHP Laravel Framework শেখার আগে কি কি বিষয় জানতে হবে? </Text>
 
-                  <Text style={styles.f20}>
-                    PHP Laravel Framework শেখা শুরু করার আগে, আপনাকে অবশ্যই নিম্নের বিষয় গুলো জানতে হবে:
-                  </Text>
-                  <Text style={styles.bullet}>1. PHP</Text>
-                  <Text style={styles.bullet}>2. Object Oriented Concepts এবং</Text>
-                  <Text style={styles.bullet}>3. MVC structure সম্পর্কে পরিষ্কার ধারণা।</Text>
+                          <Text style={styles.f20}>
+                            PHP Laravel Framework শেখা শুরু করার আগে, আপনাকে অবশ্যই নিম্নের বিষয় গুলো জানতে হবে:
+                          </Text>
+                          <Text style={styles.bullet}>1. PHP</Text>
+                          <Text style={styles.bullet}>2. Object Oriented Concepts এবং</Text>
+                          <Text style={styles.bullet}>3. MVC structure সম্পর্কে পরিষ্কার ধারণা।</Text>
 
-                  <Text style={styles.bullet}>
-                    4.আর Laravel Framework এর Dependency Manage করার জন্য Composer অবশ্যই ইন্সটল করা থাকতে হবে।
-                  </Text>
+                          <Text style={styles.bullet}>
+                            4.আর Laravel Framework এর Dependency Manage করার জন্য Composer অবশ্যই ইন্সটল করা থাকতে হবে।
+                          </Text>
+                    </View>
 
-                  <View style={{width: 360, height: 90, backgroundColor: '#000'}}>
-                    <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>This Application is Developed by :</Text>
-                    <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>Ahmed sohel...</Text>
-                    <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>Chottogram,Bangladesh</Text>
-                  </View>
+                    <View style={{width: 360, height: 90, backgroundColor: '#000'}}>
+                        <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>This Application is Developed by :</Text>
+                        <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>Ahmed sohel...</Text>
+                        <Text style={{color:'#fff',marginTop:10,textAlign:'center'}}>Chottogram,Bangladesh</Text>
+                    </View>
+
             </ScrollView>
       </Fragment>
     );
@@ -89,6 +92,10 @@ export default LotsOfStyles;
 
 
 const styles = StyleSheet.create({
+  container:{
+    padding:10,
+    backgroundColor:'#ffebcd',
+  },
   bigBlue: {
     color: 'blue',
     fontWeight: 'bold',
